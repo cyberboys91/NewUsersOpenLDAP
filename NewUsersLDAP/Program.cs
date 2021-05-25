@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Text.RegularExpressions;
 
@@ -7,20 +7,20 @@ namespace NewUsersLDAP
     class Program
     {
         /*
-            dn: cn=michael.martinez,cn=Usuarios,dc=ldap,dc=gobart,dc=gob,dc=cu
-            cn:  michael.martinez
+            dn: cn=javier.labori,cn=Usuarios,dc=domain,dc=com
+            cn:  javier.labori
             gidnumber: 500
-            homedirectory: /home/users/michael.martinez
+            homedirectory: /home/users/javier.labori
             loginshell: /bin/sh
             objectclass: inetOrgPerson
             objectclass: posixAccount
             objectclass: top
-            sn: michael.martinez
-            uid: michael.martinez
+            sn: javier.labori
+            uid: javier.labori
             uidnumber: 1000
-            userpassword: Reivaj:9101
+            userpassword: Jlabori2021**
        */
-        static string newLineFormat = "dn: cn={0},cn=Usuarios,dc=ldap,dc=gobart,dc=gob,dc=cu\ncn:  {1}\ngidnumber: 500\nhomedirectory: /home/users/{2}\nloginshell: /bin/sh\nobjectclass: inetOrgPerson\nobjectclass: posixAccount\nobjectclass: top\nsn: {3}\nuid: {4}\nuidnumber: {5}\nuserpassword: {6}";
+        static string newLineFormat = "dn: cn={0},cn=Usuarios,dc=domain,dc=com\ncn:  {1}\ngidnumber: 500\nhomedirectory: /home/users/{2}\nloginshell: /bin/sh\nobjectclass: inetOrgPerson\nobjectclass: posixAccount\nobjectclass: top\nsn: {3}\nuid: {4}\nuidnumber: {5}\nuserpassword: {6}";
         static void Main(string[] args)
         {
             string newUsersPath = "newUsersLDAP.ldif";
