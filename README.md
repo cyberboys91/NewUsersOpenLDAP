@@ -1,2 +1,2 @@
 # NewUsersOpenLDAP
-Recibe un fichero con el nombre de los usuarios (uno por línea) y genera un fichero ldif para importarlo al servidor OpenLdap con una contraseña predeterminada por cada usuario
+It receives a file with the names of the users (one per line) and generates an ldif file to import it to the OpenLdap server with a default password for each user
