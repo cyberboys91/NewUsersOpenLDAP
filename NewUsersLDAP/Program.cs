@@ -7,18 +7,18 @@ namespace NewUsersLDAP
     class Program
     {
         /*
-            dn: cn=javier.labori,cn=Usuarios,dc=domain,dc=com
-            cn:  javier.labori
+            dn: cn=username.lastname,cn=Users,dc=domain,dc=com
+            cn:  username.lastname
             gidnumber: 500
-            homedirectory: /home/users/javier.labori
+            homedirectory: /home/users/username.lastname
             loginshell: /bin/sh
             objectclass: inetOrgPerson
             objectclass: posixAccount
             objectclass: top
-            sn: javier.labori
-            uid: javier.labori
+            sn: username.lastname
+            uid: username.lastname
             uidnumber: 1000
-            userpassword: Jlabori2021**
+            userpassword: Password2021**
        */
         static string newLineFormat = "dn: cn={0},cn=Usuarios,dc=domain,dc=com\ncn:  {1}\ngidnumber: 500\nhomedirectory: /home/users/{2}\nloginshell: /bin/sh\nobjectclass: inetOrgPerson\nobjectclass: posixAccount\nobjectclass: top\nsn: {3}\nuid: {4}\nuidnumber: {5}\nuserpassword: {6}";
         static void Main(string[] args)
